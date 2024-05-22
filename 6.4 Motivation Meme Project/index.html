@@ -1,0 +1,78 @@
+<!-- 
+  TODO: Create a motivational post website.
+Style it how ever you like. 
+Look at the goal image for inspiration.
+But it must have the following features:
+1. The main h1 text should be using the Regular Libre Baskerville Font from Google Fonts:
+  https://fonts.google.com/specimen/Libre+Baskerville
+2. The text should be white and background black.
+3. Add your own image into the images folder inside assets. It should have a 5px white border.
+4. The text should be center aligned.
+5. Create a div to contain the h1, p and img elements. Adjust the margins so that the image and text are centered on the page. 
+  Hint: You horizontally center a div by giving it a width of 50% and a margin-left of 25%.
+  Hint: Set the image to have a width of 100% so it fills the div. 
+6. Read about the text-transform property on MDN docs to make the h1 uppercase with CSS.
+  https://developer.mozilla.org/en-US/docs/Web/CSS/text-transform 
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Motivational Meme</title>
+
+  <style>
+    html {
+      background-color: black;
+      color: white;
+      text-align: center;
+    }
+    .libre-baskerville-regular {
+      font-family: "Libre Baskerville", serif;
+      font-weight: 400;
+      font-style: normal;
+    }
+
+    .libre-baskerville-bold {
+      font-family: "Libre Baskerville", serif;
+      font-weight: 700;
+      font-style: normal;
+    }
+
+    .libre-baskerville-regular-italic {
+      font-family: "Libre Baskerville", serif;
+      font-weight: 400;
+      font-style: italic;
+    }
+
+    div {
+      width: 50%;
+      margin-left: 25%;
+      margin-top: 3%
+    }
+
+    #imagen1 {
+      width: 100%;
+      border: 5px solid white;
+    }
+    h1 {
+      text-transform: uppercase;
+    }
+    p{
+      font-size: 16pt;
+    }
+  </style>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <div>
+    <img id="imagen1" src="./assets/images/daenerys.jpeg"/>
+    <h1 class="libre-baskerville-bold">cuando observas tu obra maestra</h1>
+    <p>De tremendo mojon que acabas de cagar</p>
+  </div>
+</body>
+</html>

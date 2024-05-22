@@ -1,0 +1,26 @@
+/* Write your code here: */
+
+/*Group Selectors*/
+h1, h2 {
+    color: blueviolet;
+}
+
+/*Child Selector*/
+div > p {
+    color: firebrick;
+}
+
+/*Descendant Combination*/
+.box li {
+    color: blue;
+}
+
+/*Chaining*/
+li.done {
+    color: green;
+}
+
+/*Combining Selectors*/
+ul p.done {
+    font-size: 0.5rem;
+}
